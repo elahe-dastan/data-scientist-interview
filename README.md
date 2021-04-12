@@ -20,4 +20,4 @@ In supervised the data has label<br/><br/>
 4. How do you build a random forest?<br/><br/>
 5. How can you avoid overfitting? lasso regression<br/><br/> 
 6. What are feature selection methods? Wrapper methods: forward selection, backward selection. Filter methods: 
-   Chi-Square<br/><br/>
+   Chi-Square, ANOVA (learn f-distribution and t-test)<br/><br/>
