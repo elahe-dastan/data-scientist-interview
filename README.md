@@ -66,7 +66,11 @@ pay attention the first phase is a test so there is no one who you can talk to o
    with each other, but I just could check one answer about the rank I mean they ask for pure linear algebra.
    Well, I couldn't even remember what the rank of a matrix was. The **rank** of a matrix is the number of **linearly 
    independent** columns (or rows), you can find the rank of a matrix using **echelon**. To be honest I don't have an 
-   intuition but there is a theorem which says the column rank is equal to the row rank.
+   intuition but there is a theorem which says the column rank is equal to the row rank, so the first thing we can say is
+   that the rank of this matrix at most will be the min(number of rows, number of columns). In this question the rank will
+   be at most the number of samples.<br/>
+   Full rank means the rank of the matrix is the largest possible number so if your features have high correlation with 
+   each other (and the number of features are less than the number of samples) your matrix won't be full rank.
    
 
     
