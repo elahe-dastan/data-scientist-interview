@@ -43,5 +43,30 @@ In supervised the data has label<br/><br/>
 23. **Which of the following ML algorithms can be used for imputing missing values of both categorical and continuous 
     variables? K-means-clustering --> crash, linear regression --> crash, Decision tree --> crash, K-NN works**<br/><br/>
 24. calculate entropy [0,0,0,1,1,1,1,1]<br/><br/>
-25.
+
+## CafeBazaar
+I had to answer to a few questions in the first phase of interview for the data scientist position at cafebazaar and I
+was rejected because the questions needed deep understanding of linear algebra which I had forgotten, I can't remember 
+what they exactly asked for, but I can give you a sense and another important point is that I now write the answer I 
+think is true, but I'm not sure so **don't rely on my answers**:<br/>
+
+1. We generated 5 random numbers using uniform distribution from [0, d] and the numbers are 5, 11, 13, 17, 23 find the 
+minimum d with more than 95% probability.<br/>
+   #####################################
+2. Given uniform distributions X and Y and the mean 0 and standard deviation 1 for both, what’s the probability of 2X > Y?
+![](2x%3Ey.jpg)
+as you see this question is supeeeeer easyyyyyy but I couldn't answer :)))) cause I didn't expect these kinds of questions
+   so shout out to you, they ask something like this expect it.
+
+3. What can you say about the rank of the matrix when the number of samples is many more than the number of features?
+pay attention the first phase is a test so there is no one who you can talk to or there is no box in which you can explain
+   what you know if I had the chance I could say that in order to find out a linear regression model I know gradient 
+   descent and normal equation and in normal equation we should calculate the inverse of X multiplied by X transpose and
+   this term is not invertible if the number of samples in many more than features or if features have high correlation
+   with each other, but I just could check one answer about the rank I mean they ask for pure linear algebra.
+   Well, I couldn't even remember what the rank of a matrix was. The **rank** of a matrix is the number of **linearly 
+   independent** columns (or rows), you can find the rank of a matrix using **echelon**. To be honest I don't have an 
+   intuition but there is a theorem which says the column rank is equal to the row rank.
+   
+
     
