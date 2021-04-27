@@ -88,4 +88,7 @@ again I can't remember every detail but here's what I remember:<br/>
    increase the weight of the samples which are wrongly predicted and then train the second model by this dataset and 
    so on. They both decrease the variance.
    
-3.
+3. I tell you to measure the height of the people in your college, what is distribution? Normal. Now I tell you to measure 
+   the height of girls and boys in your college separately, what is the distribution? More normal. Now I tell you to 
+   measure their salary, what is the distribution? Normal. What is the difference between these two distribution? the 
+   salary distribution has a heavier tail than the height distribution.
