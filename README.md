@@ -43,6 +43,7 @@ In supervised the data has label<br/><br/>
 23. **Which of the following ML algorithms can be used for imputing missing values of both categorical and continuous 
     variables? K-means-clustering --> crash, linear regression --> crash, Decision tree --> crash, K-NN works**<br/><br/>
 24. calculate entropy [0,0,0,1,1,1,1,1]<br/><br/>
+25. **What is the standard of the mean?**
 
 ## CafeBazaar
 I had to answer to a few questions in the first phase of interview for the data scientist position at cafebazaar and I
@@ -72,5 +73,5 @@ pay attention the first phase is a test so there is no one who you can talk to o
    Full rank means the rank of the matrix is the largest possible number so if your features have high correlation with 
    each other (and the number of features are less than the number of samples) your matrix won't be full rank.
    
-
     
+## Digikala
