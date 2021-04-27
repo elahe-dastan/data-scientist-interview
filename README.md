@@ -75,3 +75,17 @@ pay attention the first phase is a test so there is no one who you can talk to o
    
     
 ## Digikala
+My interview experience with digikala was much more reasonable than cafebazaar. I was asked any kind of question from 
+easy to hard. I had to **code**, know **sql**, know **ml models**, know **statistics**, and the nice thing was that in 
+each of them the understanding was much more important than answering completely and all the questions were example based
+again I can't remember every detail but here's what I remember:<br/>
+
+1. bias/variance tradeoff. not only the meaning, but I had to explain it in different situations for example: When you 
+   are using a random forest instead of a decision tree, what are you doing about bias/variance? I'm reducing variance.
+   
+2. explain bagging and boosting and how each of them affect bias/variance: In bagging we train a few models of the same
+   type with different datasets and then use voting among them. In boosting we train a model with whole dataset, and we 
+   increase the weight of the samples which are wrongly predicted and then train the second model by this dataset and 
+   so on. They both decrease the variance.
+   
+3.
