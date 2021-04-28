@@ -92,3 +92,24 @@ again I can't remember every detail but here's what I remember:<br/>
    the height of girls and boys in your college separately, what is the distribution? More normal. Now I tell you to 
    measure their salary, what is the distribution? Normal. What is the difference between these two distribution? the 
    salary distribution has a heavier tail than the height distribution.
+   
+## ROC
+This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
+life decisions. This is the story happened to me which may happen to you too. Once I had to solve a coding challenge, it
+was an imbalanced dataset, and I had to train a classifier. As you can guess precision is not a good metric in this 
+problem, cause even always predicting false gives you a high prediction. Then I found out that recall is as important as
+precision, and the first thing popped to my mind was F1-score but then in my searches I heard about another metric called
+ROC_AUC which was claimed to work well for an imbalanced dataset. That's wrong, in ROC_AUC we are calculating the area 
+under the receiver operating characteristic curve. In this curve the y-axis is the sensitivity or true positive rate:<br/>
+True Positive Rate = True Positives / (True Positives + False Negatives)<br/>
+It measures the proportion of the positive data that we classify correctly. The x-axis is the false positive rate:<br/>
+False Positive Rate = False Positives / (False Positives + True Negatives)<br/>
+it measures the proportion of the negative data that we classify as positive, so if your dataset is highly imbalanced, and 
+most of the data is labeled negative then the number of True Negative samples can affect the whole curve, if the model
+classifies all samples as negative then the number of True Negative will be so large and False Positive Rate will be so 
+small, and it assumes the model is so good so this metric is not good at all for imbalanced dataset classification. To 
+solve it, we should use precision instead of false positive rate:<br/>
+Precision = True Positives / (True Positives + False Positives)<br/>
+it measures the proportion of the data the model classifies as positive is really positive, and the areas under this curve 
+can be used as a good metric.
+
