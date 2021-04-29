@@ -137,3 +137,6 @@ or the model has so many parameters, and I even had a physics intuition for Mome
 and make the algorithm faster we use what I called "velocity" and "acceleration" to move faster in a dimension needed and
 avoid oscillating by changing the parameters by "V" of derivative of "W" but to be honest I have no intuition for ADAM 
 optimization, I've seen the algorithm and this is something I can't understand but is working
+
+# binary cross entropy
+![](binary_cross_entopy.png)
