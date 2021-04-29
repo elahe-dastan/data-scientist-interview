@@ -113,3 +113,27 @@ Precision = True Positives / (True Positives + False Positives)<br/>
 it measures the proportion of the data the model classifies as positive is really positive, and the areas under this curve 
 can be used as a good metric.
 
+# SGD, Momentum, Adam
+These optimizations were not asked in interview, but it's highly important to fully understand them:<br/>
+
+Stochastic Gradient Descent: In regular gradient descent we should bring whole the training dataset to our calculations 
+which will be so much if our dataset is so large and our model has so many parameters. In this situation we can use 
+SGD, this algorithm stochastically chooses a mini batch of the dataset in each step and does the calculation.</br>
+
+Momentum: I always think about this optimization with a physics intuition. The problem is that we want to make gradient 
+descent faster and avoid oscillation. We change the calculations this way:<br/>
+"V" of derivative of "W" (parameters of the model) is equal to "B" (hyper parameter) multiplied by "V" of 
+derivative of "W" plus derivative of "W".<br/>
+Then "W" in each step is updated this way:<br/>
+"W" will be equal to "W" minus learning rate multiplied by "V" of derivative of "W"<br/>
+In here I see "V" as velocity and derivative of "W" as acceleration. As the equations show if faster move in one 
+dimension is needed then the acceleration makes velocity bigger and bigger each step, and the parameters of the model will 
+be updated faster and faster and if one dimension oscillate in regular gradient descent in this algorithm acceleration 
+will be positive one step and negative the other step and doesn't let velocity to get big so parameters will not change 
+a lot.
+
+Adam: I had an intuition for SGD that we use a mini-batch instead of the whole dataset cause our dataset is so large
+or the model has so many parameters, and I even had a physics intuition for Momentum optimization that to avoid oscillating
+and make the algorithm faster we use what I called "velocity" and "acceleration" to move faster in a dimension needed and
+avoid oscillating by changing the parameters by "V" of derivative of "W" but to be honest I have no intuition for ADAM 
+optimization, I've seen the algorithm and this is something I can't understand but is working
