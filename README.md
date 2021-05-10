@@ -92,3 +92,13 @@ again I can't remember every detail but here's what I remember:<br/>
    the height of girls and boys in your college separately, what is the distribution? More normal. Now I tell you to 
    measure their salary, what is the distribution? Normal. What is the difference between these two distribution? the 
    salary distribution has a heavier tail than the height distribution.
+   
+4. Do you what q-q plot is? This question was great although I couldn't answer. Here it is, what it tries to understand
+is whether a dataset is normally distributed or uniformly distributed or ... or if two datasets' distribution is the 
+   same. Assume you have a dataset with fifteen samples, and you wonder if this dataset is normally distributed,<br/>
+   Step1 : Give each point its own quantile<br/>
+   Step2 : Get yourself a normal curve(any normal curve will do)<br/>
+   Step3 : Add the same number of quantiles to the curve as you created for the data(here 15)(For the normal curve, "
+   equal sized groups" means that there is an equal probability of observing a value within each group this means that
+   groups on the edge must be wider and groups in the middle are narrower)<br/>
+   Step4 : Now plot q-q graph
