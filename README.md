@@ -102,3 +102,51 @@ is whether a dataset is normally distributed or uniformly distributed or ... or 
    equal sized groups" means that there is an equal probability of observing a value within each group this means that
    groups on the edge must be wider and groups in the middle are narrower)<br/>
    Step4 : Now plot q-q graph
+
+## ROC
+This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
+life decisions. This is the story happened to me which may happen to you too. Once I had to solve a coding challenge, it
+was an imbalanced dataset, and I had to train a classifier. As you can guess precision is not a good metric in this 
+problem, cause even always predicting false gives you a high prediction. Then I found out that recall is as important as
+precision, and the first thing popped to my mind was F1-score but then in my searches I heard about another metric called
+ROC_AUC which was claimed to work well for an imbalanced dataset. That's wrong, in ROC_AUC we are calculating the area 
+under the receiver operating characteristic curve. In this curve the y-axis is the sensitivity or true positive rate:<br/>
+True Positive Rate = True Positives / (True Positives + False Negatives)<br/>
+It measures the proportion of the positive data that we classify correctly. The x-axis is the false positive rate:<br/>
+False Positive Rate = False Positives / (False Positives + True Negatives)<br/>
+it measures the proportion of the negative data that we classify as positive, so if your dataset is highly imbalanced, and 
+most of the data is labeled negative then the number of True Negative samples can affect the whole curve, if the model
+classifies all samples as negative then the number of True Negative will be so large and False Positive Rate will be so 
+small, and it assumes the model is so good so this metric is not good at all for imbalanced dataset classification. To 
+solve it, we should use precision instead of false positive rate:<br/>
+Precision = True Positives / (True Positives + False Positives)<br/>
+it measures the proportion of the data the model classifies as positive is really positive, and the areas under this curve 
+can be used as a good metric.
+
+# SGD, Momentum, Adam
+These optimizations were not asked in interview, but it's highly important to fully understand them:<br/>
+
+Stochastic Gradient Descent: In regular gradient descent we should bring whole the training dataset to our calculations 
+which will be so much if our dataset is so large and our model has so many parameters. In this situation we can use 
+SGD, this algorithm stochastically chooses a mini batch of the dataset in each step and does the calculation.</br>
+
+Momentum: I always think about this optimization with a physics intuition. The problem is that we want to make gradient 
+descent faster and avoid oscillation. We change the calculations this way:<br/>
+"V" of derivative of "W" (parameters of the model) is equal to "B" (hyper parameter) multiplied by "V" of 
+derivative of "W" plus derivative of "W".<br/>
+Then "W" in each step is updated this way:<br/>
+"W" will be equal to "W" minus learning rate multiplied by "V" of derivative of "W"<br/>
+In here I see "V" as velocity and derivative of "W" as acceleration. As the equations show if faster move in one 
+dimension is needed then the acceleration makes velocity bigger and bigger each step, and the parameters of the model will 
+be updated faster and faster and if one dimension oscillate in regular gradient descent in this algorithm acceleration 
+will be positive one step and negative the other step and doesn't let velocity to get big so parameters will not change 
+a lot.
+
+Adam: I had an intuition for SGD that we use a mini-batch instead of the whole dataset cause our dataset is so large
+or the model has so many parameters, and I even had a physics intuition for Momentum optimization that to avoid oscillating
+and make the algorithm faster we use what I called "velocity" and "acceleration" to move faster in a dimension needed and
+avoid oscillating by changing the parameters by "V" of derivative of "W" but to be honest I have no intuition for ADAM 
+optimization, I've seen the algorithm and this is something I can't understand but is working
+
+# binary cross entropy
+![](binary_cross_entopy.png)
