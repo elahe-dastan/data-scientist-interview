@@ -101,7 +101,12 @@ is whether a dataset is normally distributed or uniformly distributed or ... or 
    Step3 : Add the same number of quantiles to the curve as you created for the data(here 15)(For the normal curve, "
    equal sized groups" means that there is an equal probability of observing a value within each group this means that
    groups on the edge must be wider and groups in the middle are narrower)<br/>
-   Step4 : Now plot q-q graph
+   Step4 : Now plot q-q graph : The plot contains dots showing where the quantiles from our dataset intersected with the 
+   quantiles from the distribution.
+   Step5 : If the data were distributed like the distribution we selected, most of the points would be on a straight line.
+   
+You can also use q-q plot to see if two datasets follow the same distribution: assume we have a dataset with 15 samples 
+and another one with just four samples, we determine four quartiles for the larger dataset and compare those
 
 ## ROC
 This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
