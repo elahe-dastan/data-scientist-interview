@@ -111,6 +111,8 @@ and another one with just four samples, we determine four quartiles for the larg
 5. The next question was if I had ever worked with spark? Let's do it<br/>
 Check [here](https://github.com/elahe-dastan/jaraghe)
 
+6. Prove Pythagoras.
+![proof](pythagoras.jpg)
 ## ROC
 This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
 life decisions. This is the story happened to me which may happen to you too. Once I had to solve a coding challenge, it
