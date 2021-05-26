@@ -109,7 +109,7 @@ You can also use q-q plot to see if two datasets follow the same distribution: a
 and another one with just four samples, we determine four quartiles for the larger dataset and compare those
 
 5. The next question was if I had ever worked with spark? Let's do it<br/>
-Check [here](git@github.com:elahe-dastan/jaraghe.git)
+Check [here](https://github.com/elahe-dastan/jaraghe)
 
 ## ROC
 This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
