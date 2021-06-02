@@ -93,7 +93,7 @@ again I can't remember every detail but here's what I remember:<br/>
    measure their salary, what is the distribution? Normal. What is the difference between these two distribution? the 
    salary distribution has a heavier tail than the height distribution.
    
-4. Do you what q-q plot is? This question was great although I couldn't answer. Here it is, what it tries to understand
+4. Do you know what q-q plot is? This question was great although I couldn't answer. Here it is, what it tries to understand
 is whether a dataset is normally distributed or uniformly distributed or ... or if two datasets' distribution is the 
    same. Assume you have a dataset with fifteen samples, and you wonder if this dataset is normally distributed,<br/>
    Step1 : Give each point its own quantile<br/>
@@ -116,7 +116,7 @@ Check [here](https://github.com/elahe-dastan/jaraghe)
    
 I had to do a **code challenge** for digikala too which is in a separate repository, check [here](https://github.com/elahe-dastan/digikala-datascientist-interview)
 ## ROC
-This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
+This part is not a question asked in any of the interviews, but I had to write it here cause it made me think of my whole
 life decisions. This is the story happened to me which may happen to you too. Once I had to solve a coding challenge, it
 was an imbalanced dataset, and I had to train a classifier. As you can guess precision is not a good metric in this 
 problem, cause even always predicting false gives you a high prediction. Then I found out that recall is as important as
