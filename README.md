@@ -113,6 +113,8 @@ Check [here](https://github.com/elahe-dastan/jaraghe)
 
 6. Prove Pythagoras.
 ![proof](pythagoras.jpg)
+   
+I had to do a **code challenge** for digikala too which is in a separate repository, check [here](https://github.com/elahe-dastan/digikala-datascientist-interview)
 ## ROC
 This part is not a question asked in any of the interviews, but I had to write it here cause it made me thick of my whole
 life decisions. This is the story happened to me which may happen to you too. Once I had to solve a coding challenge, it
