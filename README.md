@@ -53,7 +53,9 @@ think is true, but I'm not sure so **don't rely on my answers**:<br/>
 
 1. We generated 5 random numbers using uniform distribution from [0, d] and the numbers are 5, 11, 13, 17, 23 find the 
 minimum d with more than 95% probability.<br/>
-   #####################################
+![](CI.jpg)
+   So we can write<br/>
+   ![](Ci.jpg)
 2. Given uniform distributions X and Y and the mean 0 and standard deviation 1 for both, what’s the probability of 2X > Y?
 ![](2x%3Ey.jpg)
 as you see this question is supeeeeer easyyyyyy but I couldn't answer :)))) cause I didn't expect these kinds of questions
