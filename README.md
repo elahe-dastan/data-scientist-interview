@@ -123,3 +123,38 @@ optimization, I've seen the algorithm and this is something I can't understand b
 
 # binary cross entropy
 ![](binary_cross_entopy.png)
+
+# Imputation methods
+I can guarantee they will ask you this question. It has some simple answers but make sure you review them before the 
+interview:<br/>
+
+#### Simple 
+1. Drop the Nulls.
+2. Replace them with mean or median
+
+#### Medium
+1. Use the mean or median but not of the whole column, only of a few samples that are close to it.
+2. Pick an algorithm or change them, so they don't crash because of Null, they just don't put the Null into calculation.
+3. Predict the Nulls. You can choose the column which has Nulls as your target column and then the known values can be 
+   used for training, then we can predict the unknown values by a simple regression.
+   
+#### Pro
+1. Mice (Multivariate Imputation By Chained Equations)algorithm: If you've gotten the idea of predicting the Null values 
+   by regression (part 3 of Medium) this algorithm will be super easy. Most probably more than just one column in your 
+   dataset contains Null values:<br/>
+   1. Replace the Null values by the mean of their column.
+   2. Go through the columns and for each of them predict the Null values by regression (And other columns don't contain
+   Nulls).
+   3. Calculate the difference between the new matrix and the previous one.
+   4. If the matrix is not close to zero then do the step two and three again.
+   
+2. Matrix Factorization: I'll go through an example, suppose you wanna build a recommender system for Netflix when a 
+person creates an account you ask them to score how much they like specific categories and knowing this can help you 
+   a lot, but most of the people just skip the part now you have a matrix R of size n*m where n is the number of users and 
+   m is the number of categories and it contains so many Nulls. Consider a positive integer k <= min(n,m), the main 
+   objective is to find matrix factors W with size n*k and H is size k*m in which R is close to WH. As these matrices are 
+   completed, the predicted rating of user u to item i (r at index u and i) can be estimated by the inner product of the 
+   corresponding user-item feature vector pairs.
+   ![](MF.jpg)
+   Estimating the parameters of W and H can be achieved by searching around the global (or local) minimum of the quadratic 
+   cost function F and once it's done, the other missing values can be estimated by the inner product too.
