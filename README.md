@@ -158,3 +158,53 @@ person creates an account you ask them to score how much they like specific cate
    ![](MF.jpg)
    Estimating the parameters of W and H can be achieved by searching around the global (or local) minimum of the quadratic 
    cost function F and once it's done, the other missing values can be estimated by the inner product too.
+   
+# Categorical encoding
+This is another most repeated questions, how will you transform categorical columns to numerical columns?
+
+#### Simple
+1. Ordinal encoder and Label encoder
+2. One hot encoder and Dummy encoder
+
+#### Medium
+1. Hashing: By hashing we can transform the categories into a fixed size number
+2. Base N encoding: We can first use ordinal encoding and then transform the numbers by base N, look at the example below:
+
+| Categorical Column |
+| ------------------ |
+|         A          |
+|         B          |
+|         C          |
+|         D          |      
+|         E          | 
+|         F          |
+|         G          |
+|         H          |
+|         I          |
+
+ordinal encoding
+
+| Categorical Column |
+| ------------------ |
+|         1          |
+|         2          |
+|         3          |
+|         4          |      
+|         5          | 
+|         6          |
+|         7          |
+|         8          |
+|         9          |
+
+base 4
+
+| Categorical   |    Column     |
+| ------------- | ------------- |
+|       0       |       1       |
+|       0       |       2       |
+|       0       |       3       |
+|       1       |       0       |
+|       1       |       1       |
+|       1       |       2       |
+|       1       |       3       |
+|       2       |       0       |
