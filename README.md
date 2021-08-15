@@ -208,3 +208,36 @@ base 4
 |       1       |       2       |
 |       1       |       3       |
 |       2       |       0       |
+
+# Tricky question
+
+## Encoding cyclical continuous features
+Let’s explore a simple 24-hour time dataset, we want to convey its cyclical nature to our model. 
+
+| Seconds Past Midnight |
+| --------------------- |
+|         192           |
+|         212           |
+|         299           |
+|         300           |      
+|         353           | 
+|         400           |
+
+we want our machine learning model to see that 23:55 and 00:05 are 10 minutes apart, but as it stands, those times will 
+appear to be 23 hours and 50 minutes apart!<br/>
+
+Here's the trick: we will create two new features, deriving a sine transform and cosine transform of the 
+seconds-past-midnight feature. We can forget the raw “seconds” column from now on.
+
+```python
+seconds_in_day = 24*60*60
+
+df['sin_time'] = np.sin(2*np.pi*df.seconds/seconds_in_day)
+df['cos_time'] = np.cos(2*np.pi*df.seconds/seconds_in_day)
+
+df.drop('seconds', axis=1, inplace=True)
+
+df.head()
+```
+
+Notice that now, 5 minutes before midnight and 5 minutes after is 10 minutes apart
