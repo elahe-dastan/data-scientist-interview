@@ -39,3 +39,30 @@ having the lowest 'f'.<br/>
 g(n) is the cost of the path from the start node to n.<br/>
 h(n) is a heuristic that estimates the cost of the cheapest path from n to the target node. (this heuristic can be the
 length of a straight line from the node n to the target)
+
+# valhalla
+Routing engine: [](https://github.com/valhalla/valhalla) implementing A*
+
+# Map Matching
+Taking in raw GPS signals (which are so noisy and sparse because of high buildings and resident vehicles) and mapping 
+them to road segments that the GPS signals actually correspond to.<br/>
+**Input:** GPS Signal
+1. Latitude
+2. Longitude
+3. Speed
+4. Course
+**Output:** Positions on a road network
+1. Latitude (on an actual road)
+2. Longitude (on an actual road)
+3. Road Segment ID
+4. Road Name
+5. Direction/heading
+
+We need both online and offline map matching
+
+## Solving map matching using HMM
+1. For every GPS signal find the k closest road segments (candidate selection)
+2. Project the GPS signals on the candidate road segments
+3. Now we have both the observations and the hidden states, and we have to calculate the emission probability
+4. Calculate the transition probability
+5. Run Viterbi algorithm
