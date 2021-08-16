@@ -33,3 +33,9 @@ right leaf.
 Cron is so amazing
 ![](cron.png)
 
+# A* (path finding)
+In each step A* picks the node according to a value 'f' which is equal to the sum of 'g' and 'h', it picks the node 
+having the lowest 'f'.<br/>
+g(n) is the cost of the path from the start node to n.<br/>
+h(n) is a heuristic that estimates the cost of the cheapest path from n to the target node. (this heuristic can be the
+length of a straight line from the node n to the target)
