@@ -41,7 +41,7 @@ h(n) is a heuristic that estimates the cost of the cheapest path from n to the t
 length of a straight line from the node n to the target)
 
 # valhalla
-Routing engine: [](https://github.com/valhalla/valhalla) implementing A*
+Routing engine: [valhalla](https://github.com/valhalla/valhalla) implementing A*
 
 # Map Matching
 Taking in raw GPS signals (which are so noisy and sparse because of high buildings and resident vehicles) and mapping 
@@ -51,6 +51,7 @@ them to road segments that the GPS signals actually correspond to.<br/>
 2. Longitude
 3. Speed
 4. Course
+
 **Output:** Positions on a road network
 1. Latitude (on an actual road)
 2. Longitude (on an actual road)
@@ -66,3 +67,6 @@ We need both online and offline map matching
 3. Now we have both the observations and the hidden states, and we have to calculate the emission probability
 4. Calculate the transition probability
 5. Run Viterbi algorithm
+
+[This link](https://github.com/bmwcarit/barefoot) refers to a famous repo owned by BMW company which has implemented a 
+map matcher (using HMM)
