@@ -70,3 +70,15 @@ We need both online and offline map matching
 
 [This link](https://github.com/bmwcarit/barefoot) refers to a famous repo owned by BMW company which has implemented a 
 map matcher (using HMM)
+
+# Feature Importance
+Suppose you have so many features and want to find out which one is more important for you. There are so many ways that 
+work for all kind of models like **wrapper methods:** forward selection, backward selection. **filter methods:** 
+   Chi-Square, ANOVA (learn f-distribution, t-test, p-value, null hypothesis and significance level). For decision tree
+you can also use **information gain** to select the more important features.
+
+# Multi step ahead prediction
+1. Use neural networks (they are multi-input multi-output)
+2. Direct: Have a specific model for each output
+3. Recursive: Use window based approach.
+4. Direct-Recursive: Have different models, and the output of the first model is the input of the second one.
