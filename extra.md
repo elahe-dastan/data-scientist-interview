@@ -82,3 +82,11 @@ you can also use **information gain** to select the more important features.
 2. Direct: Have a specific model for each output
 3. Recursive: Use window based approach.
 4. Direct-Recursive: Have different models, and the output of the first model is the input of the second one.
+
+# Great-circle distance
+It is the shortest distance between two points on the surface of a sphere, measured along the surface of the sphere (as 
+opposed to a straight line through the sphere's interior). The distance between two points in Euclidean space is the 
+length of a straight line between them, but on the sphere there are no straight lines. In spaces with curvature, straight 
+lines are replaced by geodesics. Geodesics on the sphere are circles on the sphere whose centers coincide with the center 
+of the sphere, and are called great circles. 
+![](gc.png)
