@@ -31,7 +31,7 @@ right leaf.
 
 # Cron job
 Cron is so amazing
-![](cron.png)
+![](images/cron.png)
 
 # A* (path finding)
 In each step A* picks the node according to a value 'f' which is equal to the sum of 'g' and 'h', it picks the node 
@@ -64,9 +64,11 @@ We need both online and offline map matching
 ## Solving map matching using HMM
 1. For every GPS signal find the k closest road segments (candidate selection)
 2. Project the GPS signals on the candidate road segments
+   ![](images/mapMatch.png)
 3. Now we have both the observations and the hidden states, and we have to calculate the emission probability
 4. Calculate the transition probability
 5. Run Viterbi algorithm
+![](images/hmm.png)
 
 [This link](https://github.com/bmwcarit/barefoot) refers to a famous repo owned by BMW company which has implemented a 
 map matcher (using HMM)
@@ -81,6 +83,7 @@ you can also use **information gain** to select the more important features.
 1. Use neural networks (they are multi-input multi-output)
 2. Direct: Have a specific model for each output
 3. Recursive: Use window based approach.
+   ![](images/recursive.png)
 4. Direct-Recursive: Have different models, and the output of the first model is the input of the second one.
 
 # Great-circle distance
@@ -89,4 +92,15 @@ opposed to a straight line through the sphere's interior). The distance between 
 length of a straight line between them, but on the sphere there are no straight lines. In spaces with curvature, straight 
 lines are replaced by geodesics. Geodesics on the sphere are circles on the sphere whose centers coincide with the center 
 of the sphere, and are called great circles. 
-![](gc.png)
+![](images/gc.png)
+
+# Mean
+1. Arithmetic mean
+   
+Example: I have speed a for 1 minute and have speed b for the next 1 minute what's my average speed: (a+b)/2
+2. Geometric mean: 
+   
+Example: My stock raises a% the first year and b% the next year what's the average raise: sqrt(a*b)
+3. Harmonic mean:
+
+Example: I have speed a for d meters and have speed b for the next d meters what's my average speed: 2/(1/a + 1/b)
