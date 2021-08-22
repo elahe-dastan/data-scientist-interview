@@ -64,10 +64,13 @@ We need both online and offline map matching
 ## Solving map matching using HMM
 1. For every GPS signal find the k closest road segments (candidate selection)
 2. Project the GPS signals on the candidate road segments
+   
+
    ![](images/mapMatch.png)
 3. Now we have both the observations and the hidden states, and we have to calculate the emission probability
 4. Calculate the transition probability
 5. Run Viterbi algorithm
+
 ![](images/hmm.png)
 
 [This link](https://github.com/bmwcarit/barefoot) refers to a famous repo owned by BMW company which has implemented a 
@@ -83,6 +86,8 @@ you can also use **information gain** to select the more important features.
 1. Use neural networks (they are multi-input multi-output)
 2. Direct: Have a specific model for each output
 3. Recursive: Use window based approach.
+   
+
    ![](images/recursive.png)
 4. Direct-Recursive: Have different models, and the output of the first model is the input of the second one.
 
