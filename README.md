@@ -1,4 +1,5 @@
-# data-scientist-interview
+# Data Scientist Interview
+
 When I wanted to become a backend developer my gorgeous [boyfriend](https://github.com/1995parham) made some practical 
 interview with me then created a [repository](https://github.com/4lie/stories) and put the questions and answers there.
 Now I want to apply for a data scientist position in which unfortunately he has no experience, so I'm making this 
@@ -241,3 +242,45 @@ df.head()
 ```
 
 Notice that now, 5 minutes before midnight and 5 minutes after is 10 minutes apart
+
+## Digikala
+My interview experience with digikala was much more reasonable than cafebazaar. I was asked any kind of question from 
+easy to hard. I had to **code**, know **sql**, know **ml models**, know **statistics**, and the nice thing was that in 
+each of them the understanding was much more important than answering completely and all the questions were example based
+again I can't remember every detail but here's what I remember:<br/>
+
+1. bias/variance tradeoff. not only the meaning, but I had to explain it in different situations for example: When you 
+   are using a random forest instead of a decision tree, what are you doing about bias/variance? I'm reducing variance.
+
+2. explain bagging and boosting and how each of them affect bias/variance: In bagging we train a few models of the same
+   type with different datasets and then use voting among them. In boosting we train a model with whole dataset, and we 
+   increase the weight of the samples which are wrongly predicted and then train the second model by this dataset and 
+   so on. They both decrease the variance.
+
+3. I tell you to measure the height of the people in your college, what is distribution? Normal. Now I tell you to measure 
+   the height of girls and boys in your college separately, what is the distribution? More normal. Now I tell you to 
+   measure their salary, what is the distribution? Normal. What is the difference between these two distribution? the 
+   salary distribution has a heavier tail than the height distribution.
+
+4. Do you know what q-q plot is? This question was great although I couldn't answer. Here it is, what it tries to understand
+is whether a dataset is normally distributed or uniformly distributed or ... or if two datasets' distribution is the 
+   same. Assume you have a dataset with fifteen samples, and you wonder if this dataset is normally distributed,<br/>
+   Step1 : Give each point its own quantile<br/>
+   Step2 : Get yourself a normal curve(any normal curve will do)<br/>
+   Step3 : Add the same number of quantiles to the curve as you created for the data(here 15)(For the normal curve, "
+   equal sized groups" means that there is an equal probability of observing a value within each group this means that
+   groups on the edge must be wider and groups in the middle are narrower)<br/>
+   Step4 : Now plot q-q graph : The plot contains dots showing where the quantiles from our dataset intersected with the 
+   quantiles from the distribution.
+   Step5 : If the data were distributed like the distribution we selected, most of the points would be on a straight line.
+
+You can also use q-q plot to see if two datasets follow the same distribution: assume we have a dataset with 15 samples 
+and another one with just four samples, we determine four quartiles for the larger dataset and compare those
+
+5. The next question was if I had ever worked with spark? Let's do it<br/>
+Check [here](https://github.com/elahe-dastan/jaraghe)
+
+6. Prove Pythagoras.
+![proof](pythagoras.jpg)
+
+I had to do a **code challenge** for digikala too which is in a separate repository, check [here](https://github.com/elahe-dastan/digikala-datascientist-interview)
