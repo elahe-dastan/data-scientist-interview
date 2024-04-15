@@ -11,7 +11,7 @@ repository and want to put all my practices here.
 1. you have buckets one 5 liters the other 3 liters, measure 4 liters:
 
    First I make the 3 liters bucket full and then pour it to 5 liters bucket then I make it full again and pour it to the
-   5 liters bucket till it gets full so the amount of water left in the 3 liters bucket is 1 liter then I make the 5 liters
+   5 liters bucket till it gets full, so the amount of water left in the 3 liters bucket is 1 liter then I make the 5 liters
    bucket empty and pour that 1 liter in it then make the 3 liters bucket full again and pour it to the 5 liters bucket
    which had 1 liter inside, so the result is 4 liters of water in the 5 liters bucket.
 
@@ -22,25 +22,25 @@ repository and want to put all my practices here.
 2. How is logistic regression done?
 3. Explain steps in decision tree
 4. How do you build a random forest?
-5. How can you avoid overfitting? lasso regression
-6. **What are feature selection methods? Wrapper methods: forward selection, backward selection. Filter methods:
-   Chi-Square, ANOVA (learn f-distribution, t-test, p-value, null hypothesis and significance level)**
+5. How can you avoid overfitting? Lasso regression
+6. What are feature selection methods? Wrapper methods: forward selection, backward selection. Filter methods:
+   Chi-Square, ANOVA (learn f-distribution, t-test, p-value, null hypothesis and significance level)
 7. How do you deal with more than 30% missing value?
 8. Explain dimensionality reduction and its benefits
-9. **How will you calculate eigen values and eigen vectors of a 3 by 3 matrix**
-10. **How to maintain deployed model?**
-11. **What are recommender systems?** collaborative, content-based
-12. It rains on saturday with 0.6 probability and rains on sunday with 0.2 probability what is the probability that it
+9. How will you calculate eigenvalues and eigenvectors of a 3 by 3 matrix
+10. How to maintain deployed model?
+11. What are recommender systems? Collaborative, content-based
+12. It rains on Saturday with 0.6 probability and rains on Sunday with 0.2 probability what is the probability that it
     rains this weekend?
 13. How can you select k for k-means?
-14. **What is the significance of p-value?**
+14. What is the significance of p-value?
 15. How can outlier values be treated?
-16. **How can you say that a time series data is stationary?**
+16. How can you say that a time series data is stationary?
 17. How can you calculate accuracy using confusion matrix?
 18. Write the equation and calculate precision and recall rate
 19. If a drawer contains 12 red socks, 16 blue socks, and 20 white socks, how many must you pull out to be sure of
     having a matching pair?
-20. People who bought this, also bought... recommendations seen on Amazon is a result of which algorithm?
+20. _People who bought this, also bought..._ recommendations seen on Amazon is a result of which algorithm?
 21. Write a SQL query to list orders with customer information?
 22. You are given a dataset on cancer detection. You've built a classification model and achieved an accuracy of 96%. Why
     shouldn't you be happy with your model performance? What can you do about it?
@@ -49,32 +49,33 @@ repository and want to put all my practices here.
 24. calculate entropy [0,0,0,1,1,1,1,1]
 25. What is the standard of the mean?
 
-## CafeBazaar
+## Cafebazaar
 
-I had to answer to a few questions in the first phase of interview for the data scientist position at cafebazaar and I
+I had to answer to a few questions in the first phase of interview for the data scientist position at Cafebazaar, and I
 was rejected because the questions needed deep understanding of linear algebra which I had forgotten, I can't remember
 what they exactly asked for, but I can give you a sense and another important point is that I now write the answer I
 think is true, but I'm not sure so **don't rely on my answers**:<br/>
 
 1. We generated 5 random numbers using uniform distribution from [0, d] and the numbers are 5, 11, 13, 17, 23 find the
-   minimum d with more than 95% probability.<br/>
+   minimum d with more than 95% probability.
    ![](CI.jpg)
-   So we can write<br/>
+   So we can write
    ![](Ci.jpg)
-2. Given uniform distributions X and Y and the mean 0 and standard deviation 1 for both, what’s the probability of 2X > Y?
+2. Given uniform distributions X and Y and the mean 0 and standard deviation 1 for both,
+   what’s the probability of 2X > Y?
    ![](2x%3Ey.jpg)
-   as you see this question is supeeeeer easyyyyyy but I couldn't answer :)))) cause I didn't expect these kinds of questions
-   so shout out to you, they ask something like this expect it.
+   As you see this question is super easy, but I couldn't answer 😂 because I
+   didn't expect these kinds of questions so shout out to you, they ask something like this expect it.
 
 3. What can you say about the rank of the matrix when the number of samples is many more than the number of features?
-   pay attention the first phase is a test so there is no one who you can talk to or there is no box in which you can explain
+   Pay attention the first phase is a test, so there is no one who you can talk to or there is no box in which you can explain
    what you know if I had the chance I could say that in order to find out a linear regression model I know gradient
    descent and normal equation and in normal equation we should calculate the inverse of X multiplied by X transpose and
    this term is not invertible if the number of samples in many more than features or if features have high correlation
    with each other, but I just could check one answer about the rank I mean they ask for pure linear algebra.
    Well, I couldn't even remember what the rank of a matrix was. The **rank** of a matrix is the number of **linearly
    independent** columns (or rows), you can find the rank of a matrix using **echelon**. To be honest I don't have an
-   intuition but there is a theorem which says the column rank is equal to the row rank, so the first thing we can say is
+   intuition, but there is a theorem which says the column rank is equal to the row rank, so the first thing we can say is
    that the rank of this matrix at most will be the min(number of rows, number of columns). In this question the rank will
    be at most the number of samples.<br/>
    Full rank means the rank of the matrix is the largest possible number so if your features have high correlation with
