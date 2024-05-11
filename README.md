@@ -48,7 +48,8 @@ repository and want to put all my practices here.
     variables? K-means-clustering → crash, linear regression → crash, Decision tree → crash, KNN works
 24. calculate entropy [0,0,0,1,1,1,1,1]
 25. What is the standard of the mean?
-26. What is Mean Reciprocal Rank? 
+26. What is Mean Reciprocal Rank?
+    ![](images/metrics_1.jpg)
 
 ## Cafebazaar
 
