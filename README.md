@@ -50,6 +50,10 @@ repository and want to put all my practices here.
 25. What is the standard of the mean?
 26. What is Mean Reciprocal Rank?
     ![](images/metrics_1.jpg)
+    ![](images/metrics_2.jpg)
+    ![](images/metrics_3.jpg)
+    ![](images/metrics_4.jpg)
+    ![](images/metrics_5.jpg)
 
 ## Cafebazaar
 
