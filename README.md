@@ -54,6 +54,9 @@ repository and want to put all my practices here.
     ![](images/metrics_3.jpg)
     ![](images/metrics_4.jpg)
     ![](images/metrics_5.jpg)
+    ![](images/metrics_6.jpg)
+    ![](images/metrics_7.jpg)
+    
 
 ## Cafebazaar
 
