@@ -309,6 +309,11 @@ and another one with just four samples, we determine four quartiles for the larg
 
 I had to do a **code challenge** for digikala too which is in a separate repository, check [here](https://github.com/elahe-dastan/digikala-datascientist-interview)
 
+## P-value
+The hypothesis that there is no difference between things is called the null hypothesis. The null hypothesis does not require any preliminary data because the only value that represents no difference is 0.
+The closer a p-value is to 0, the more confidence we have that things A and B are different.
+While a small p-value helps us decide if thing A is different from thing B, it does not tell us how different they are.
+
 ## Screening
 You are training a linear regression model on a representative sample in order to predict house prices. Performance tests suggest that the model has an issue of high estimator bias in combination with low estimator variance. What action below is likely to solve the high bias issue?
 • A: Collect more labeled data.
