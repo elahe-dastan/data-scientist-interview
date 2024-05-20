@@ -308,3 +308,6 @@ and another one with just four samples, we determine four quartiles for the larg
    ![proof](pythagoras.jpg)
 
 I had to do a **code challenge** for digikala too which is in a separate repository, check [here](https://github.com/elahe-dastan/digikala-datascientist-interview)
+
+## Screening
+
