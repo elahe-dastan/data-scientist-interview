@@ -310,4 +310,11 @@ and another one with just four samples, we determine four quartiles for the larg
 I had to do a **code challenge** for digikala too which is in a separate repository, check [here](https://github.com/elahe-dastan/digikala-datascientist-interview)
 
 ## Screening
+You are training a linear regression model on a representative sample in order to predict house prices. Performance tests suggest that the model has an issue of high estimator bias in combination with low estimator variance. What action below is likely to solve the high bias issue?
+• A: Collect more labeled data.
+• B: Add higher-order polynomial terms.
+• C: Increase the weights on regularization terms.
+• D: Use a subsample of the data.
+
+**My answer is B**
 
