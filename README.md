@@ -331,6 +331,7 @@ You are training a linear regression model on a representative sample in order t
 What do you do if your model is overfitted?
 
 Name a few loss function:
+
 •  Mean Squared Error (MSE)
 
 •  Cross-Entropy Loss: Often used in classification problems, especially with softmax activation in neural networks.
@@ -343,7 +344,9 @@ Name a few loss function:
 
 •  Huber Loss: Combines MSE and MAE to be less sensitive to outliers than MSE.
 
+
 Name a few metrics:
+
 •  Precision
 
 •  Recall (Sensitivity)
