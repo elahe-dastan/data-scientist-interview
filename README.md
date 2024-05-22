@@ -327,3 +327,39 @@ You are training a linear regression model on a representative sample in order t
 
 **My answer is B**
 
+## Apple
+What do you do if your model is overfitted?
+
+Name a few loss function:
+•  Mean Squared Error (MSE)
+
+•  Cross-Entropy Loss: Often used in classification problems, especially with softmax activation in neural networks.
+
+•  Hinge Loss: Used primarily for support vector machines (SVMs) for classification.
+
+•  Log Loss: Also known as binary cross-entropy, used for binary classification problems.
+
+•  Mean Absolute Error (MAE)
+
+•  Huber Loss: Combines MSE and MAE to be less sensitive to outliers than MSE.
+
+Name a few metrics:
+•  Precision
+
+•  Recall (Sensitivity)
+
+•  F1 Score
+
+•  Area Under the ROC Curve (AUC-ROC)
+
+•  MAP & Mean Absolute Percentage Error (MAPE)
+
+•  MSE & Root Mean Squared Error (RMSE)
+
+•  R2
+
+•  All ranking metrics like MRR and NDCG
+
+
+
+
