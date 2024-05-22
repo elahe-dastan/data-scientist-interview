@@ -363,6 +363,6 @@ Name a few metrics:
 
 •  All ranking metrics like MRR and NDCG
 
-
+What is Embedding and how is it trained?
 
 
