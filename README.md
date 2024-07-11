@@ -56,6 +56,7 @@ repository and want to put all my practices here.
     ![](images/metrics_5.jpg)
     ![](images/metrics_6.jpg)
     ![](images/metrics_7.jpg)
+27.what is the difference between RMSE and MSE? While MSE gives a measure of the average squared error, RMSE provides a measure of the average error in the same units as the original data, making it more interpretable in practical terms.
     
 
 ## Cafebazaar
@@ -318,14 +319,44 @@ A p-value is composed of three parts:
 2. The probability of observing something else that is equally rare.
 3. The probability of observing something rarer or more extreme.
 
-## Screening
+## Picnic Technologies
+### Screening
 You are training a linear regression model on a representative sample in order to predict house prices. Performance tests suggest that the model has an issue of high estimator bias in combination with low estimator variance. What action below is likely to solve the high bias issue?
+
 • A: Collect more labeled data.
+
 • B: Add higher-order polynomial terms.
+
 • C: Increase the weights on regularization terms.
+
 • D: Use a subsample of the data.
 
 **My answer is B**
+
+You performed a linear fit on a dataset with two variables, x1 and x2. The p-value for x1 is 0.01 and that for x2 is 0.1. Which statement is false?
+
+• A: p-value is the probability to find the observed or more extreme value for the test statistic given that the null hypothesis is false.
+
+• B: p-value is the probability to find the observed or more extreme value for the test statistic given that the null hypothesis is true.
+
+• C: Variable x2 could have no effect at all on the response variable.
+
+• D: The fitting coefficient of variable x1 is generally considered statistically significant.
+
+**The answer is A**
+
+Which metric is not used for evaluating the performance of a regression model?
+
+• A: F1-score
+
+• B: AIC
+
+• C: R-squared value
+
+• D: RMSE
+
+**The answer is A**
+
 
 ## Apple
 What do you do if your model is overfitted?
