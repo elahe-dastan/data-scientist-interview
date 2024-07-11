@@ -414,7 +414,7 @@ check [here](./picnic/sum-digit-fibonacci.py)
 if you write the sequence, you see it reapeats itself.
 
 ### System Design
-![](./images/repurches-question)
+![](./images/repurches-question.png)
 
 
 ## Apple
