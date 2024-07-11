@@ -380,7 +380,7 @@ In the US, the number of new cases of cancer is 454.8 per 100,000 men and women 
 
 • D: Specificity of the model is 100%.
 
-**The answer is B**
+**My answer is D**
 
 
 ## Apple
