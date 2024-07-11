@@ -418,6 +418,8 @@ if you write the sequence, you see it reapeats itself.
 
 ![](./images/repurches-design-1.png)
 
+![](./images/repurches-design-2.png)
+
 
 ## Apple
 What do you do if your model is overfitted?
