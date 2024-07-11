@@ -408,7 +408,10 @@ An online social media platform has asked you to develop a churn propensity mode
 
 ### screening code
 write a code to find the nth element of the sequence 0, 1, 1, 2, 3, 5, 8, 13, 12, 7, 10, 8, 18, ....
-chech [here](./picnic/sum-digit-fibonacci.py)
+
+check [here](./picnic/sum-digit-fibonacci.py)
+
+if you write the sequence, you see it reapeats itself.
 
 
 
