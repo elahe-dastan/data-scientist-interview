@@ -333,7 +333,7 @@ A p-value is composed of three parts:
 3. The probability of observing something rarer or more extreme.
 
 ## Picnic Technologies
-### Screening
+### Screening test questions
 You are training a linear regression model on a representative sample in order to predict house prices. Performance tests suggest that the model has an issue of high estimator bias in combination with low estimator variance. What action below is likely to solve the high bias issue?
 
 • A: Collect more labeled data.
@@ -405,6 +405,12 @@ An online social media platform has asked you to develop a churn propensity mode
 • D: Apply a logarithmic transformation to features that are not normally distributed.
 
 **The answer is A**
+
+### screening code
+write a code to find the nth element of the sequence 0, 1, 1, 2, 3, 5, 8, 13, 12, 7, 10, 8, 18, ....
+chech ![here]()
+
+
 
 
 ## Apple
