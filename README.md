@@ -382,6 +382,30 @@ In the US, the number of new cases of cancer is 454.8 per 100,000 men and women 
 
 **My answer is D**
 
+K-fold cross-validation means to split data into k subsets, and train models on k-1 subsets while leaving one set out for evaluation. In which of the following situations is cross validation generally unnecessary?
+
+• A: Optimizing the depth of a decision tree for a random forest model.
+
+• B: Reducing the dimensionality of data using PCA.
+
+• C: Choosing the number of clusters for a k-means model.
+
+• D: Determining weights for the regularization terms of ridge regression.
+
+**My answer is B and C**
+
+An online social media platform has asked you to develop a churn propensity model. You have built a boosted tree model with 500 trees and maximum depth of 50. The AUC value is 0.95 on training data, but only 0.5 on test data. To improve model performance on test data, which step would you recommend to try next?
+
+• A: Reduce maximum tree depth.
+
+• B: Increase number of trees.
+
+• C: Reduce from 10-fold cross validation to 3-fold.
+
+• D: Apply a logarithmic transformation to features that are not normally distributed.
+
+**The answer is A**
+
 
 ## Apple
 What do you do if your model is overfitted?
