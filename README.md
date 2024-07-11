@@ -56,8 +56,21 @@ repository and want to put all my practices here.
     ![](images/metrics_5.jpg)
     ![](images/metrics_6.jpg)
     ![](images/metrics_7.jpg)
-27.what is the difference between RMSE and MSE? While MSE gives a measure of the average squared error, RMSE provides a measure of the average error in the same units as the original data, making it more interpretable in practical terms.
-    
+
+27.What is the difference between RMSE and MSE? While MSE gives a measure of the average squared error, RMSE provides a measure of the average error in the same units as the original data, making it more interpretable in practical terms.
+
+28.What is AIC (Akaike Information Criterion)? The AIC balances the trade-off between the goodness of fit and the complexity of the model. 
+
+AIC=2k−2ln(L)
+
+where:
+
+k is the number of parameters in the model.
+
+L is the maximum likelihood of the model.
+
+AIC does not provide an absolute measure of a model's quality but rather a relative measure to compare multiple models.
+
 
 ## Cafebazaar
 
@@ -356,6 +369,18 @@ Which metric is not used for evaluating the performance of a regression model?
 • D: RMSE
 
 **The answer is A**
+
+In the US, the number of new cases of cancer is 454.8 per 100,000 men and women per year (based on 2008-2012 cases, National Cancer Institute). You have built a model to support the detection of cancer cases. The model accuracy amounts to 99.55%, however it was unable to correctly detect a single case of cancer. Which of the following statements is true?
+
+• A: False negative rate of the model is 0.45%.
+
+• B: Error rate of the model is 0.05%.
+
+• C: Recall of the model is 0.45%.
+
+• D: Specificity of the model is 100%.
+
+**The answer is B**
 
 
 ## Apple
