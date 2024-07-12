@@ -71,6 +71,8 @@ L is the maximum likelihood of the model.
 
 AIC does not provide an absolute measure of a model's quality but rather a relative measure to compare multiple models.
 
+28. What is zero-shot learning? In computer vision, zero-shot learning models learned parameters for seen classes along with their class representations and rely on representational similarity among class labels so that, during inference, instances can be classified into new classes.
+
 
 ## Cafebazaar
 
