@@ -420,6 +420,18 @@ if you write the sequence, you see it reapeats itself.
 
 ![](./images/repurches-design-2.png)
 
+### Assessment Day
+
+#### ML Fundamentals Interview
+System design of a fraud detection service.
+
+#### Software Engineering Skills Interview
+
+#### Stakeholder Management Interview
+Asking about the projects you've done in your career and try to ask you about the challenges you've solved, how you've solved them and why you didn't do another approach.
+
+#### Closing Interview
+With VP, not an interview, just talking
 
 ## Apple
 What do you do if your model is overfitted?
