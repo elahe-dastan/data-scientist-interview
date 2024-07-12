@@ -332,6 +332,10 @@ A p-value is composed of three parts:
 2. The probability of observing something else that is equally rare.
 3. The probability of observing something rarer or more extreme.
 
+## Apollo Agriculture
+### System Design
+They had a system to assign credit to farmers, they asked me to design a system to do so.
+
 ## Picnic Technologies
 ### Screening test questions
 You are training a linear regression model on a representative sample in order to predict house prices. Performance tests suggest that the model has an issue of high estimator bias in combination with low estimator variance. What action below is likely to solve the high bias issue?
@@ -406,7 +410,7 @@ An online social media platform has asked you to develop a churn propensity mode
 
 **The answer is A**
 
-### screening code
+### Screening Code
 write a code to find the nth element of the sequence 0, 1, 1, 2, 3, 5, 8, 13, 12, 7, 10, 8, 18, ....
 
 check [here](./picnic/sum-digit-fibonacci.py)
@@ -423,7 +427,36 @@ if you write the sequence, you see it reapeats itself.
 ### Assessment Day
 
 #### ML Fundamentals Interview
-System design of a fraud detection service.
+System design of a payment fraud detection service.
+
+Question: you buy stuff and after getting them you pay, what if you don't!!!
+
+Answer: 
+
+Data: 
+1. History of payment of the person
+2. Is it first delivery
+3. Price of delivery
+
+Model:
+
+Classification:
+1. logistic regression
+2. treebased -> interperetable
+3. NN with binary cross entropy loss function
+
+Imbalanced dataset:
+1. weight
+2. ensumble -> boosting
+
+Evaluation:
+Offline: Precision and Recall -> F1 score, AUC
+Online: Business metrics
+
+A few business rules:
+Block if the person hasn't paid his debt since 3 months ago
+...
+
 
 #### Software Engineering Skills Interview
 
