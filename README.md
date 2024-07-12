@@ -450,10 +450,11 @@ Imbalanced dataset:
 2. ensumble -> boosting
 
 Evaluation:
-Offline: Precision and Recall -> F1 score, AUC
-Online: Business metrics
+1. Offline: Precision and Recall -> F1 score, AUC
+2. Online: Business metrics
 
 A few business rules:
+
 Block if the person hasn't paid his debt since 3 months ago
 ...
 
