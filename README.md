@@ -71,7 +71,8 @@ L is the maximum likelihood of the model.
 
 AIC does not provide an absolute measure of a model's quality but rather a relative measure to compare multiple models.
 
-28. What is zero-shot learning? In computer vision, zero-shot learning models learned parameters for seen classes along with their class representations and rely on representational similarity among class labels so that, during inference, instances can be classified into new classes.
+29. What is zero-shot learning? In computer vision, zero-shot learning models learned parameters for seen classes along with their class representations and rely on representational similarity among class labels so that, during inference, instances can be classified into new classes.
+30. What is knowledge distillation? In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models) have higher knowledge capacity than small models, this capacity might not be fully utilized.
 
 
 ## Cafebazaar
