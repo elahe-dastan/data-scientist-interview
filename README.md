@@ -471,6 +471,10 @@ Asking about the projects you've done in your career and try to ask you about th
 With VP, not an interview, just talking
 
 ## Apple
+First I had a technical interview with my agency company 0+x in which I answered a few ML question like:
+
+What is central limit theorem?
+
 What do you do if your model is overfitted?
 
 Name a few loss function:
