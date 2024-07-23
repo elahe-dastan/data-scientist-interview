@@ -513,8 +513,10 @@ Name a few metrics:
 What is Embedding and how is it trained?
 
 Then I had two or three interviews with Apple itself I don't exactly remember what went on but these are what I have wroten:
+
 . You mentined on your resume you use Bert to build a chatbot, how did you fine tune it on your dataset?
-. They gave me a file containing some paragraphs and they asked me to return the TF-IDF metric value for each word in each paragraph
+
+. They gave me a file containing some paragraphs and they asked me to return the TF-IDF metric value for each word in each paragraph. check [here](https://github.com/elahe-dastan/data-scientist-interview/blob/main/apple/tf-idf.py)
 
 
 
