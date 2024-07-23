@@ -512,4 +512,6 @@ Name a few metrics:
 
 What is Embedding and how is it trained?
 
+Then I had two or three interviews with Apple itself I don't exactly remember what went on but these are what I have wroten:
+You mentined on your resume you use Bert to build a chatbot, how did you fine tune it on you dataset?
 
