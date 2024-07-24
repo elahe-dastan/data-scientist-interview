@@ -461,8 +461,11 @@ A few business rules:
 Block if the person hasn't paid his debt since 3 months ago
 ...
 
+The most challenging part of this question is that you don't have a completely trustworthy groundtruth.
+
 
 #### Software Engineering Skills Interview
+
 
 #### Stakeholder Management Interview
 Asking about the projects you've done in your career and try to ask you about the challenges you've solved, how you've solved them and why you didn't do another approach.
