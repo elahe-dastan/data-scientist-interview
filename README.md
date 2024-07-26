@@ -521,7 +521,7 @@ Then I had two or three interviews with Apple itself I don't exactly remember wh
 
 • They gave me a file containing some paragraphs and they asked me to return the TF-IDF metric value for each word in each paragraph. check [here](https://github.com/elahe-dastan/data-scientist-interview/blob/main/apple/tf-idf.py)
 
-• They gave me a file containing data of some monsthers, we had different features including categorical features and the lable defining the type of the monster and I was asked to write a code to classify these monsters. check [here]()
+• They gave me a file containing data of some monsthers, we had different features including categorical features and the lable defining the type of the monster and I was asked to write a code to classify these monsters. check [here](https://github.com/elahe-dastan/data-scientist-interview/blob/main/apple/classify-monsters.py)
 
 
 
