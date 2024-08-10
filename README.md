@@ -529,7 +529,9 @@ Suppose you want to build "similar items" for digikala from scratch, how do you 
 
 First things first, we need to find features to help us find similar items, what do we have? I can think of the category or some features we force the customer to fill then comments and rating of the item and last but not least the text and the image of the item. I search for the similar item in the same category and I create a long vector containing the feature the customer fill (e.g. the size of the bottle or the color of it) then it comes to transforming the text and the image to vectors and concating them to the initial one. To embed text in word level we can use Word2Vec (CBOW and Skip-gram) and better to embed it in sentence level we can use transformers for example when Sentence-BERT was released. It outperformed all previous approaches to semantic textual similarity tasks and allowed the calculation of sentence embeddings. To embed images we can use convolutional NN models like ResNet. 
 
-If there is an item, is the same item with a different color its similar item?
+If there is an item, is the same item with a different color its similar item? 
+
+People may have different opinions we have to either run a big analysis and see if most people consider this as similar item by either looking at previous actions of our users (or asking them) or let the model learn it we have an embedding for each item different features may have different importance we can give these embeddings to a neural network and get another embedding back this NN can learn to give higher weights to more important features we can train this NN by supervised approach by looking at our service and gather data of which items users chose as similar item.
 
 
 
